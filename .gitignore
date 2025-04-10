@@ -1,5 +1,64 @@
 # Created by venv; see https://docs.python.org/3/library/venv.html
-Include/
-Lib/
-Scripts/
-pyvenv.cfg
+
+# Python-related
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+*.manifest
+
+# Django stuff
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media/
+staticfiles/
+static/
+.env
+.env.*
+
+# Ignore __pycache__ directories and .pyc files inside migrations
+restaurant/migrations/__pycache__/
+restaurant/migrations/*.pyc
+
+# MySQL
+*.sql
+*.mysql
+
+# VSCode / IDEs
+.vscode/
+.idea/
+*.swp
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Pipenv / venv / Poetry
+pip-log.txt
+pip-delete-this-directory.txt
+venv/
+env/
+ENV/
+.venv/
+.poetry/
+
+# Migrations (optional, if you don't want to track them)
+# Comment out the next line if you *do* want to track migrations
+**/migrations/*.py
+**/migrations/__pycache__/
+
+# Coverage / Testing
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+test-results/
